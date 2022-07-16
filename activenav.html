@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add or remove Active class</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d3d3d3;
+
+        }
+        .links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        li{
+            list-style: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        li a{
+            text-decoration: none;
+            color: #111;
+            font-size: 25px;
+        }
+        li:hover,li.active{
+            background-color: #005cd4;
+        }
+
+        li:hover a,li.active a{
+            color:#ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">shop</a></li>
+        <li><a href="#">contact </a></li>
+        <li><a href="#">sign in</a></li>
+    </div>
+    <script src="active.js"></script>
+</body>
+</html>
